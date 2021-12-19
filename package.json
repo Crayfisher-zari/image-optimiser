@@ -1,0 +1,18 @@
+{
+  "name": "image-optimizer",
+  "packageManager": "yarn@3.1.1",
+  "dependencies": {
+    "imagemin": "8.0.1",
+    "imagemin-mozjpeg": "10.0.0",
+    "imagemin-pngquant": "9.0.2",
+    "imagemin-webp": "7.0.0"
+  },
+  "devDependencies": {
+    "prettier": "2.5.1"
+  },
+  "scripts": {
+    "optimise": "node index.mjs optimise",
+    "convert": "node index.mjs convert-webp",
+    "format": "prettier --write index.mjs"
+  }
+}
